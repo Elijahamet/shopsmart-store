@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUXE COLLECTIVE - Curated Excellence</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">◆</span>
+                <span class="logo-text">LUXE COLLECTIVE</span>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#collections">Collections</a></li>
+                    <li><a href="#wishlist" id="wishlistLink">Wishlist</a></li>
+                    <li><a href="#membership">Membership</a></li>
+                    <li>
+                        <button class="theme-toggle" id="themeToggle">🌙</button>
+                    </li>
+                    <li>
+                        <button class="cart-icon" id="cartIcon">
+                            <span class="cart-icon-text">Cart</span>
+                            <span class="cart-count" id="cartCount">0</span>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Curated Excellence</h1>
+            <p>Discover handpicked luxury items from the world's finest artisans</p>
+            <div class="hero-badge">
+                <span>✦ MEMBERS ONLY ✦</span>
+            </div>
+        </div>
+        <div class="hero-overlay"></div>
+    </section>
+
+    <!-- Exclusive Banner -->
+    <section class="exclusive-banner">
+        <div class="banner-content">
+            <span class="banner-icon">👑</span>
+            <span>Exclusive access to limited collections • Free concierge service • Priority shipping</span>
+        </div>
+    </section>
+
+    <!-- Search and Filters -->
+    <section class="search-section" id="collections">
+        <div class="search-container">
+            <input type="text" class="search-bar" id="searchBar" placeholder="Search our curated collections...">
+            <div class="search-icon">🔍</div>
+        </div>
+        <div class="filters">
+            <button class="filter-btn active" data-category="all">All Collections</button>
+            <button class="filter-btn" data-category="electronics">Tech & Innovation</button>
+            <button class="filter-btn" data-category="clothing">Fashion & Style</button>
+            <button class="filter-btn" data-category="home">Home & Living</button>
+            <button class="filter-btn" data-category="books">Literature & Arts</button>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="products-container">
+        <div class="section-header">
+            <h2>Curated Collections</h2>
+            <p>Each item is carefully selected for its exceptional quality and craftsmanship</p>
+        </div>
+        <div class="products-grid" id="productsGrid">
+            <!-- Products will be dynamically generated -->
+        </div>
+    </section>
+
+    <!-- Cart Drawer -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+    <div class="cart-drawer" id="cartDrawer">
+        <div class="cart-header">
+            <h3>Your Selection</h3>
+            <button class="close-cart" id="closeCart">✕</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <!-- Cart items will be dynamically generated -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total" id="cartTotal">Total: $0.00</div>
+            <div class="cart-benefits">
+                <div class="benefit">✓ Free White-Glove Delivery</div>
+                <div class="benefit">✓ 30-Day Return Guarantee</div>
+            </div>
+            <button class="checkout-btn" id="checkoutBtn">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        ✨ Added to Your Collection
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
