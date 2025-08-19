@@ -1,3 +1,4 @@
+
 🛒 ShopSmart
 
 A sleek, modern mini e-commerce web app built with HTML, CSS, and JavaScript. ShopSmart lets users browse products, add them to a cart, save favorites to a wishlist, and enjoy a smooth shopping experience — all without needing a backend.
